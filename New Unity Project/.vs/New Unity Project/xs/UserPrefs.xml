@@ -1,7 +1,10 @@
 ﻿<Properties StartupConfiguration="{B2B58FB2-4462-6B0C-A872-40DD957E5FE0}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MainMenu.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BattleHUD.cs">
     <Files>
-      <File FileName="Assets/Scripts/MainMenu.cs" Line="15" Column="27" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="38" Column="29" />
+      <File FileName="Assets/Scripts/UIPanel.cs" Line="11" Column="26" />
+      <File FileName="Assets/Scripts/BattleSystem.cs" Line="28" Column="17" />
+      <File FileName="Assets/Scripts/BattleHUD.cs" Line="15" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
