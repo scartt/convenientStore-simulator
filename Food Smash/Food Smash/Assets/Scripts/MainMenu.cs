@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    void Start()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Debug.Log("Escape!");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
     // called when StartButton pressed
     public void PlayGame()
     {
@@ -14,15 +22,20 @@ public class MainMenu : MonoBehaviour
     // called when ExitButton pressed
     public void QuitGame()
     {
-        Debug.Log("QUIT!");
+        // Debug.Log("QUIT!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Application.Quit();
     }
 
     public void NotQuit()
     {
-        Debug.Log("QUIT!");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Application.Quit();
+    }
+
+    public void OpenQuit()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         Application.Quit();
     }
 
