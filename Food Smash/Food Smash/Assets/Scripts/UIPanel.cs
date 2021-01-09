@@ -5,7 +5,7 @@ public class UIPanel : MonoBehaviour
 {
     public RawImage charaAImg;
     public Text contentTxt;
-    public UIPanel panel;
+    public Image panel;
 
     public void ShowPanel(bool value)
     {
