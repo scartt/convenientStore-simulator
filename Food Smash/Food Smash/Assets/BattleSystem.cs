@@ -39,7 +39,7 @@ public class BattleSystem : MonoBehaviour
 		GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
 		enemyUnit = enemyGO.GetComponent<Unit>();
 
-		dialogueText.text = "A wild " + enemyUnit.unitName + " approaches...";
+		dialogueText.text = "一个凶狠的 " + enemyUnit.unitName + " 出现了...";
 
 		playerHUD.SetHUD(playerUnit);
 		enemyHUD.SetHUD(enemyUnit);
@@ -55,7 +55,7 @@ public class BattleSystem : MonoBehaviour
 		bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
 		enemyHUD.SetHP(enemyUnit.currentHP);
-		dialogueText.text = "The attack is successful!";
+		dialogueText.text = "你对" + enemyUnit.unitName + "造成了攻击!";
 
 		yield return new WaitForSeconds(2f);
 
@@ -72,7 +72,7 @@ public class BattleSystem : MonoBehaviour
 
 	IEnumerator EnemyTurn()
 	{
-		dialogueText.text = enemyUnit.unitName + " attacks!";
+		dialogueText.text = enemyUnit.unitName + " 对你展开了攻击!";
 
 		yield return new WaitForSeconds(1f);
 
@@ -98,16 +98,16 @@ public class BattleSystem : MonoBehaviour
 	{
 		if(state == BattleState.WON)
 		{
-			dialogueText.text = "You won the battle!";
+			dialogueText.text = "胜利!";
 		} else if (state == BattleState.LOST)
 		{
-			dialogueText.text = "You were defeated.";
+			dialogueText.text = "已死亡。";
 		}
 	}
 
 	void PlayerTurn()
 	{
-		dialogueText.text = "Choose an action:";
+		dialogueText.text = "选择一个动作：";
 	}
 
 	IEnumerator PlayerHeal()
@@ -115,7 +115,7 @@ public class BattleSystem : MonoBehaviour
 		playerUnit.Heal(5);
 
 		playerHUD.SetHP(playerUnit.currentHP);
-		dialogueText.text = "You feel renewed strength!";
+		dialogueText.text = "你感到充满了力量!";
 
 		yield return new WaitForSeconds(2f);
 
