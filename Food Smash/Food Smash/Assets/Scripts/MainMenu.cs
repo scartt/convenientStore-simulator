@@ -19,6 +19,13 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void NotQuit()
+    {
+        Debug.Log("QUIT!");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        Application.Quit();
+    }
+
     // called when CreditButton pressed
     public void Credit()
     {
