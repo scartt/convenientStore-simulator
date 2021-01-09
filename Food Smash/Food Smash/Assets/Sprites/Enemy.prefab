@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3973862563508761831}
   - component: {fileID: 4363536997099518543}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 475d8d7ed9646504888a5702b5d7ed33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: "\u4F60"
+  unitName: "\u676F\u9762"
   unitLevel: 999
   damage: 10
   maxHP: 25
