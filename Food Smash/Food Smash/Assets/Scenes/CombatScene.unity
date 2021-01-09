@@ -1645,7 +1645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 2101677546}
-  levelText: {fileID: 0}
   hpSlider: {fileID: 1589395327}
 --- !u!1 &1404372541
 GameObject:
@@ -2414,7 +2413,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nameText: {fileID: 1166149988}
-  levelText: {fileID: 0}
   hpSlider: {fileID: 1142284058}
 --- !u!114 &1727677076
 MonoBehaviour:
