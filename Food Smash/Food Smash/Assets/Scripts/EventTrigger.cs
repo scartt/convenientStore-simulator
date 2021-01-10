@@ -15,16 +15,26 @@ public class EventTrigger : MonoBehaviour
 
     void Start()
     {
-        Init();
+        dialogBox.SetActive(true);
+        dialogText.gameObject.SetActive(true);
+        player.gameObject.SetActive(true);
+        dialogText.text = "搜索货架上有什么可以增加战斗力的食物吧！按下Enter继续";
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Return))
+        {
+            Init();
+        }
+
         if (Input.GetKey(KeyCode.Q)) // && dialogActive)
         {
             if (dialogBox.activeInHierarchy)
             {
+                //Debug.Log("Enter!");
                 Init();
             }
             else
