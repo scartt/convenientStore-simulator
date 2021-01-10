@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class IntroText : MonoBehaviour
+public class GameOver : MonoBehaviour
 {
     public Text dialogueText;
     private int curLine;
@@ -22,9 +22,9 @@ public class IntroText : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (curLine == 5)
+            if (curLine == 2)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
             }
 
             NextLine();

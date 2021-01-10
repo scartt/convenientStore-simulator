@@ -888,7 +888,7 @@ RectTransform:
   - {fileID: 2063472924}
   - {fileID: 340457279}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -925,7 +925,6 @@ MonoBehaviour:
   dialogActive: 1
   player: {fileID: 340457280}
   newCanvas: {fileID: 1770374397}
-  newCanvas2: {fileID: 0}
   one: {fileID: 888213247}
   two: {fileID: 1293587049}
 --- !u!1 &530221539
@@ -3355,36 +3354,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 776376933}
   m_CullTransparentMesh: 0
---- !u!1 &808940746
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 808940747}
-  m_Layer: 0
-  m_Name: SceneTransition
-  m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &808940747
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 808940746}
-  m_LocalRotation: {x: 0.008726225, y: 0.008726225, z: -0.0000761528, w: 0.9999238}
-  m_LocalPosition: {x: 0, y: 0, z: -108.22261}
-  m_LocalScale: {x: 100, y: 100, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 1, y: 1, z: 0}
 --- !u!1 &888213245
 GameObject:
   m_ObjectHideFlags: 0
@@ -5973,7 +5942,6 @@ MonoBehaviour:
   dialogActive: 0
   player: {fileID: 0}
   newCanvas: {fileID: 0}
-  newCanvas2: {fileID: 0}
   one: {fileID: 0}
   two: {fileID: 0}
 --- !u!114 &1770374395
@@ -6060,7 +6028,7 @@ RectTransform:
   - {fileID: 1644910845}
   - {fileID: 888213246}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6131,7 +6099,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1988197937
 GameObject:
@@ -6179,7 +6147,7 @@ Transform:
   - {fileID: 19758023}
   - {fileID: 642003840}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063472923
 GameObject:
@@ -6193,7 +6161,7 @@ GameObject:
   - component: {fileID: 2063472926}
   - component: {fileID: 2063472925}
   m_Layer: 5
-  m_Name: Text
+  m_Name: dialogueText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

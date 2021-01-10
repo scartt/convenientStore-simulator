@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class IntroText : MonoBehaviour
+public class 游戏规则 : MonoBehaviour
 {
     public Text dialogueText;
     private int curLine;
@@ -22,7 +22,7 @@ public class IntroText : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (curLine == 5)
+            if (curLine >= 5)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }

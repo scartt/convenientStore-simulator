@@ -13,7 +13,6 @@ public class EventTrigger : MonoBehaviour
     public bool dialogActive;
     public Image player;
     public Canvas newCanvas;
-    public Canvas newCanvas2;
     public RawImage one;
     public RawImage two;
 
@@ -85,17 +84,7 @@ public class EventTrigger : MonoBehaviour
 
         if (Input.GetKey(KeyCode.P)) // && dialogActive)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
-        }
-
-        if (Input.GetKey(KeyCode.O)) // && dialogActive)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
-        }
-
-        if (Input.GetKey(KeyCode.I)) // && dialogActive)
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
         }
     }
 
@@ -124,9 +113,8 @@ public class EventTrigger : MonoBehaviour
         }
     }
 
-    public void ChangeInventory()
-    {
-        newCanvas.gameObject.SetActive(false);
-        newCanvas2.gameObject.SetActive(true);
-    }
+    //public void ChangeInventory()
+    //{
+    //    newCanvas.gameObject.SetActive(false);
+    //}
 }

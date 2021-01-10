@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public enum BattleState { START, PLAYERTURN, ENEMYTURN, WON, LOST }
 
@@ -102,6 +103,7 @@ public class BattleSystem : MonoBehaviour
 		} else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "已死亡。";
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
 		}
 	}
 

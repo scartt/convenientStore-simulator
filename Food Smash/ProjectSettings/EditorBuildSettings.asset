@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 388d43f7983b543a49ba8c7dd52cd541
   - enabled: 1
-    path: Assets/Scenes/Lobby.unity
-    guid: 3cd2d3df0f638425da6faae09392a247
-  - enabled: 1
     path: Assets/Scenes/Exit2.unity
     guid: 3d334bc6e7c1b4f60a9120b5e21ad997
   - enabled: 1
@@ -29,4 +26,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/OpenScene.unity
     guid: b734c1f156d5c4ef7bc3b50b7ae6a44b
+  - enabled: 1
+    path: "Assets/Scenes/\u6E38\u620F\u89C4\u5219.unity"
+    guid: 53d379964582e4e1daaa782aba0c87e8
+  - enabled: 1
+    path: Assets/Scenes/Lobby.unity
+    guid: 3cd2d3df0f638425da6faae09392a247
+  - enabled: 1
+    path: Assets/Scenes/Boss2ndPhase.unity
+    guid: ac17bb526b4e548758e139ca4d75e796
   m_configObjects: {}

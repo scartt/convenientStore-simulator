@@ -16,7 +16,7 @@ public class MainMenu : MonoBehaviour
     // called when StartButton pressed
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
     }
 
     // called when ExitButton pressed
