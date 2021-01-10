@@ -1702,8 +1702,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -63.9, y: 21.07}
-  m_SizeDelta: {x: 92.97566, y: 54.9}
+  m_AnchoredPosition: {x: -63.9, y: 14.9}
+  m_SizeDelta: {x: 92.97566, y: 42.56395}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166149988
 MonoBehaviour:
@@ -1726,10 +1726,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ee455897a1df114db6047a1bd5f6c10, type: 3}
-    m_FontSize: 42
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 43
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -1737,7 +1737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name
+  m_Text: "\u85AF\u7247\n"
 --- !u!222 &1166149989
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2283,7 +2283,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2600,7 +2600,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 8357048691566155021, guid: c0e4ceda6a4354e959f97e4d743ee7a5,
     type: 3}
-  enemyPrefab: {fileID: 5674484368629161613, guid: 10021f1ffb851ee42a2f9e2ce33428b7,
+  enemyPrefab: {fileID: 7707787648584447960, guid: 5645114b6ff374e22876265c0bd36946,
     type: 3}
   playerBattleStation: {fileID: 776899475}
   enemyBattleStation: {fileID: 1466009198}
@@ -3043,8 +3043,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70.5, y: 21.07}
-  m_SizeDelta: {x: 88.56883, y: 54.9}
+  m_AnchoredPosition: {x: -70.5, y: 13.7}
+  m_SizeDelta: {x: 88.56883, y: 40.09675}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2101677546
 MonoBehaviour:
@@ -3067,10 +3067,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 6ee455897a1df114db6047a1bd5f6c10, type: 3}
-    m_FontSize: 42
+    m_FontSize: 32
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 3
     m_MaxSize: 43
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -3078,7 +3078,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Name
+  m_Text: "\u676F\u9762\uFF08\u666E\u901A\u5F62\u6001\uFF09"
 --- !u!222 &2101677547
 CanvasRenderer:
   m_ObjectHideFlags: 0
