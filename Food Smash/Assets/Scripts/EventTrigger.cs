@@ -12,9 +12,16 @@ public class EventTrigger : MonoBehaviour
     public string dialog;
     public bool dialogActive;
     public Image player;
-   
+    public Canvas newCanvas;
+    public Canvas newCanvas2;
+    public RawImage one;
+    public RawImage two;
+
     void Start()
     {
+        two.gameObject.SetActive(false);
+        one.gameObject.SetActive(false);
+        newCanvas.gameObject.SetActive(false);
         dialogBox.SetActive(true);
         dialogText.gameObject.SetActive(true);
         player.gameObject.SetActive(true);
@@ -25,6 +32,17 @@ public class EventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            if (newCanvas.gameObject.activeInHierarchy)
+            {
+                newCanvas.gameObject.SetActive(false);
+            }
+            else
+            {
+                newCanvas.gameObject.SetActive(true);
+            }
+        }
 
         if (Input.GetKey(KeyCode.Return))
         {
@@ -43,7 +61,8 @@ public class EventTrigger : MonoBehaviour
                 dialogBox.SetActive(true);
                 dialogText.gameObject.SetActive(true);
                 player.gameObject.SetActive(true);
-                dialogText.text =  "得到了薯片！";
+                dialogText.text =  "得到了红烧牛肉面！";
+                one.gameObject.SetActive(true);
             }
         }
 
@@ -58,7 +77,9 @@ public class EventTrigger : MonoBehaviour
                 dialogBox.SetActive(true);
                 dialogText.gameObject.SetActive(true);
                 player.gameObject.SetActive(true);
-                dialogText.text = "得到了汽水！";
+
+                dialogText.text = "得到了可乐！";
+                two.gameObject.SetActive(true);
             }
         }
 
@@ -101,5 +122,11 @@ public class EventTrigger : MonoBehaviour
             Debug.Log("Player left range");
             dialogActive = false;
         }
+    }
+
+    public void ChangeInventory()
+    {
+        newCanvas.gameObject.SetActive(false);
+        newCanvas2.gameObject.SetActive(true);
     }
 }

@@ -8,7 +8,7 @@ public class NoteUI : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        canvas.gameObject.SetActive(false);
+        // canvas.gameObject.SetActive();
     }
 
     // Update is called once per frame
@@ -17,7 +17,7 @@ public class NoteUI : MonoBehaviour
         if (Input.GetKey(KeyCode.E))
         {
             Debug.Log("Note Open");
-            canvas.gameObject.SetActive(true);
+            canvas.gameObject.SetActive(false);
         }
     }
 }
