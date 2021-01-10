@@ -9,6 +9,7 @@ public class UIManager : MonoBehaviour
     public UIPanel panel;
     [SerializeField]
     private int curLine;
+    public Canvas canvas;
 
     void Start()
     {
@@ -42,6 +43,7 @@ public class UIManager : MonoBehaviour
     private void Init()
     {
         HideUI();
+        canvas.gameObject.SetActive(false);
         curLine = 0;
         panel.SetContentText("");
     }
