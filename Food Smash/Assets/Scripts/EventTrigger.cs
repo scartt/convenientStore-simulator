@@ -12,7 +12,7 @@ public class EventTrigger : MonoBehaviour
     public string dialog;
     public bool dialogActive;
     public Image player;
-
+   
     void Start()
     {
         dialogBox.SetActive(true);
@@ -25,6 +25,7 @@ public class EventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetKey(KeyCode.Return))
         {
             Init();
