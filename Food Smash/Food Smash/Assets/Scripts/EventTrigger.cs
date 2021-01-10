@@ -20,7 +20,7 @@ public class EventTrigger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space)) // && dialogActive)
+        if (Input.GetKey(KeyCode.Q)) // && dialogActive)
         {
             if (dialogBox.activeInHierarchy)
             {
