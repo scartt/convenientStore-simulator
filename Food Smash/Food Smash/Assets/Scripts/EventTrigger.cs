@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class EventTrigger : MonoBehaviour
 {
@@ -48,6 +49,21 @@ public class EventTrigger : MonoBehaviour
                 player.gameObject.SetActive(true);
                 dialogText.text = "得到了汽水！";
             }
+        }
+
+        if (Input.GetKey(KeyCode.P)) // && dialogActive)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        }
+
+        if (Input.GetKey(KeyCode.O)) // && dialogActive)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
+        }
+
+        if (Input.GetKey(KeyCode.I)) // && dialogActive)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
         }
     }
 
