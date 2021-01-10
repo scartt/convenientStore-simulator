@@ -10,10 +10,11 @@ public class EventTrigger : MonoBehaviour
     public Text dialogText;
     public string dialog;
     public bool dialogActive;
+    public Image player;
 
     void Start()
     {
-        
+        Init();
     }
 
     // Update is called once per frame
@@ -23,14 +24,38 @@ public class EventTrigger : MonoBehaviour
         {
             if (dialogBox.activeInHierarchy)
             {
-                dialogBox.SetActive(false);
+                Init();
             }
             else
             {
                 dialogBox.SetActive(true);
-                // dialogText = dialog;
+                dialogText.gameObject.SetActive(true);
+                player.gameObject.SetActive(true);
+                dialogText.text =  "得到了薯片！";
             }
         }
+
+        if (Input.GetKey(KeyCode.E)) // && dialogActive)
+        {
+            if (dialogBox.activeInHierarchy)
+            {
+                Init();
+            }
+            else
+            {
+                dialogBox.SetActive(true);
+                dialogText.gameObject.SetActive(true);
+                player.gameObject.SetActive(true);
+                dialogText.text = "得到了汽水！";
+            }
+        }
+    }
+
+    private void Init()
+    {
+        dialogBox.SetActive(false);
+        dialogText.gameObject.SetActive(false);
+        player.gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D other)
