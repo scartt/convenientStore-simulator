@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     public List<string> contents;
-    public UIPanel panel;
+    // public UIPanel panel;
     [SerializeField]
     private int curLine;
     public Canvas canvas;
@@ -45,17 +45,22 @@ public class UIManager : MonoBehaviour
         HideUI();
         canvas.gameObject.SetActive(false);
         curLine = 0;
-        panel.SetContentText("");
+        // panel.SetContentText("");
+    }
+
+    public void ShowEscape()
+    {
+        canvas.gameObject.SetActive(true);
     }
 
     void ShowUI()
     {
-        panel.ShowCharaA(true);
+        // panel.ShowCharaA(true);
     }
 
     void HideUI()
     {
-        panel.ShowCharaA(false);
+        // panel.ShowCharaA(false);
     }
 
     void NextLine()
@@ -65,6 +70,6 @@ public class UIManager : MonoBehaviour
 
     void LoadText(string value)
     {
-        panel.SetContentText(value);
+        // panel.SetContentText(value);
     }
 }

@@ -39,6 +39,24 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
+    public void OpenEscape()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Application.Quit();
+    }
+
+    public void YesEscape()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        Application.Quit();
+    }
+
+    public void NoEscape()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        // Application.Quit();
+    }
+
     // called when CreditButton pressed
     public void Credit()
     {
