@@ -22,7 +22,7 @@ public class GameOver : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (curLine == 2)
+            if (curLine >= 2)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
             }

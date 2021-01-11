@@ -100,6 +100,7 @@ public class BattleSystem : MonoBehaviour
 		if(state == BattleState.WON)
 		{
 			dialogueText.text = "胜利!";
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 6);
 		} else if (state == BattleState.LOST)
 		{
 			dialogueText.text = "已死亡。";

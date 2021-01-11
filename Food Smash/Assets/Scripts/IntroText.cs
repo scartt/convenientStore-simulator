@@ -22,7 +22,7 @@ public class IntroText : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (curLine == 5)
+            if (curLine >= 5)
             {
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }

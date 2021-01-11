@@ -13,6 +13,7 @@ public class MainMenu : MonoBehaviour
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
+
     // called when StartButton pressed
     public void PlayGame()
     {
@@ -47,8 +48,8 @@ public class MainMenu : MonoBehaviour
 
     public void YesEscape()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
-        Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        // Application.Quit();
     }
 
     public void NoEscape()

@@ -391,8 +391,6 @@ MonoBehaviour:
   - Game Over
   - Game Over
   - Game Over
-  - Game Over
-  - Game Over
   canvas: {fileID: 1366090611}
 --- !u!1 &1708342425
 GameObject:

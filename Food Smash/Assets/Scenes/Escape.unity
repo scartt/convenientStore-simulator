@@ -286,7 +286,7 @@ GameObject:
   - component: {fileID: 821629239}
   - component: {fileID: 821629238}
   m_Layer: 5
-  m_Name: Button
+  m_Name: yesButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -490,7 +490,7 @@ GameObject:
   - component: {fileID: 1390646730}
   - component: {fileID: 1390646729}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: noButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -843,7 +843,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -881,6 +881,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 2020592383}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5079668804d3549178d4b0b2a644f593, type: 3}
+  m_Script: {fileID: 11500000, guid: 7291e0eed65d4483fbf987d9ae347d95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
