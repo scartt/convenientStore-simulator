@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: "\u676F\u9762\uFF08\u72C2\u66B4\u5F62\u6001\uFF09"
   unitLevel: 0
-  damage: 50
+  damage: 100
   maxHP: 500
   currentHP: 500
 --- !u!1001 &4703466125589708448
@@ -24,6 +24,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4201065865540762980, guid: 0ba5db14769b14dc98451d16fcecd390,
+        type: 3}
+      propertyPath: unitName
+      value: "\u676F\u9762\uFF08\u72C2\u66B4\u5F62\u6001\uFF09"
+      objectReference: {fileID: 0}
     - target: {fileID: 671170888559433328, guid: 0ba5db14769b14dc98451d16fcecd390,
         type: 3}
       propertyPath: m_RootOrder
@@ -82,7 +87,7 @@ PrefabInstance:
     - target: {fileID: 3966969925512278719, guid: 0ba5db14769b14dc98451d16fcecd390,
         type: 3}
       propertyPath: m_Name
-      value: "\u676F\u9762\u50CF\u7D20 Variant"
+      value: "\u676F\u9762\uFF08\u72C2\u66B4\u5F62\u6001\uFF09"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ba5db14769b14dc98451d16fcecd390, type: 3}

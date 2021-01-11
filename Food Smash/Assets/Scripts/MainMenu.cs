@@ -30,13 +30,13 @@ public class MainMenu : MonoBehaviour
 
     public void NotQuit()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
         Application.Quit();
     }
 
     public void OpenQuit()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
         Application.Quit();
     }
 
