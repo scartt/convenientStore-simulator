@@ -34,7 +34,10 @@ public class IntroText : MonoBehaviour
             }
             LoadText(contents[curLine]);
         }
-
+        if (Input.GetKey(KeyCode.Return))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+        }
     }
 
     void NextLine()
@@ -51,5 +54,14 @@ public class IntroText : MonoBehaviour
     {
         SetContentText(value);
     }
+
+    public void OpenQuit()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 6);
+        Application.Quit();
+    }
+
+
+
 }
 

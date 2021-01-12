@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class NoteUI : MonoBehaviour
+public class 可以挑战的敌人 : MonoBehaviour
 {
     public Canvas canvas;
     // Start is called before the first frame update
     void Start()
     {
-        //canvas.gameObject.SetActive(false);
+        canvas.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -22,18 +22,16 @@ public class NoteUI : MonoBehaviour
         }
         */
 
-
-    }
-
-    public void OpenQuit()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
-        Application.Quit();
-    }
-
-    public void OpenQuitStreet()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
-        Application.Quit();
+        if (Input.GetKey(KeyCode.Tab))
+        {
+            if (canvas.gameObject.activeInHierarchy)
+            {
+                canvas.gameObject.SetActive(false);
+            }
+            else
+            {
+                canvas.gameObject.SetActive(true);
+            }
+        }
     }
 }

@@ -24,26 +24,26 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         // Debug.Log("QUIT!");
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Application.Quit();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+
     }
 
     public void NotQuit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 7);
-        Application.Quit();
+
     }
 
     public void OpenQuit()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 7);
-        Application.Quit();
+
     }
 
     public void OpenEscape()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        Application.Quit();
+
     }
 
     public void YesEscape()

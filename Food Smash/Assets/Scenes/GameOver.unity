@@ -190,7 +190,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: "You Lose!\n\u6309\u4E0BEnter\u56DE\u5230\u6218\u6597\u524D"
 --- !u!222 &937268478
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -233,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000030518, y: 0.000015259}
-  m_SizeDelta: {x: 861.9999, y: 447.00006}
+  m_AnchoredPosition: {x: 0, y: -0.000015259}
+  m_SizeDelta: {x: 1029, y: 620}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1096153812
 MonoBehaviour:
@@ -388,9 +388,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 937268477}
   contents:
-  - Game Over
-  - Game Over
-  - Game Over
+  - "You Lose! \u6309\u4E0BEnter\u56DE\u5230\u6218\u6597\u524D"
   canvas: {fileID: 1366090611}
 --- !u!1 &1708342425
 GameObject:
