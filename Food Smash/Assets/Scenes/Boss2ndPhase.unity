@@ -556,8 +556,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 864106694}
-        m_MethodName: OpenEscape
+      - m_Target: {fileID: 874584810}
+        m_MethodName: OpenEscape2nd
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -861,7 +861,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 14.019932
+  orthographic size: 12.452079
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1503,6 +1503,7 @@ GameObject:
   - component: {fileID: 874584807}
   - component: {fileID: 874584809}
   - component: {fileID: 874584808}
+  - component: {fileID: 874584810}
   m_Layer: 5
   m_Name: DialoguePanel
   m_TagString: Untagged
@@ -1568,6 +1569,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 874584806}
   m_CullTransparentMesh: 0
+--- !u!114 &874584810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 874584806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5079668804d3549178d4b0b2a644f593, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1062034439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3076,8 +3089,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000059325, y: 26.1}
-  m_SizeDelta: {x: 2017.8286, y: 1090.1365}
+  m_AnchoredPosition: {x: -11.4, y: 26.1}
+  m_SizeDelta: {x: 2076.2063, y: 1090.1365}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952582185
 MonoBehaviour:

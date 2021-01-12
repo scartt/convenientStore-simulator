@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 388d43f7983b543a49ba8c7dd52cd541
   - enabled: 1
-    path: Assets/Scenes/Exit2.unity
+    path: Assets/Scenes/Exit.unity
     guid: 3d334bc6e7c1b4f60a9120b5e21ad997
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
@@ -19,7 +19,7 @@ EditorBuildSettings:
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Escape.unity
-    guid: 5872b8122b10145b1a96a0210812eee5
+    guid: ed8153f094509db4faed7853ca0140c3
   - enabled: 1
     path: Assets/Scenes/Street.unity
     guid: 2bde41343685a45aeb82976d583be38e

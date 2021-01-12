@@ -46,6 +46,12 @@ public class MainMenu : MonoBehaviour
 
     }
 
+    public void OpenEscape2nd()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 5);
+
+    }
+
     public void YesEscape()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
