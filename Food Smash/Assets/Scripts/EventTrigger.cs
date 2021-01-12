@@ -15,7 +15,6 @@ public class EventTrigger : MonoBehaviour
     public Canvas newCanvas;
     public RawImage one;
     public RawImage two;
-    public Canvas canvas;
 
     void Start()
     {
@@ -27,7 +26,6 @@ public class EventTrigger : MonoBehaviour
         dialogText.gameObject.SetActive(true);
         player.gameObject.SetActive(true);
         dialogText.text = "搜索货架上有什么可以增加战斗力的食物吧！按下Enter继续。（按下Tab查看当前已有的食物。Q和E进行搜索。）";
-
     }
 
     // Update is called once per frame
@@ -55,14 +53,13 @@ public class EventTrigger : MonoBehaviour
             if (dialogBox.activeInHierarchy)
             {
                 //Debug.Log("Enter!");
-                newCanvas.gameObject.SetActive(false);
+                Init();
             }
             else
             {
-                newCanvas.gameObject.SetActive(true);
-                //dialogBox.SetActive(true);
-                //dialogText.gameObject.SetActive(true);
-                //player.gameObject.SetActive(true);
+                dialogBox.SetActive(true);
+                dialogText.gameObject.SetActive(true);
+                player.gameObject.SetActive(true);
                 dialogText.text =  "得到了红烧牛肉面！";
                 one.gameObject.SetActive(true);
             }

@@ -15,12 +15,12 @@ public class NoteUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (Input.GetKey(KeyCode.E))
+        if (Input.GetKey(KeyCode.Tab))
         {
             Debug.Log("Note Open");
             canvas.gameObject.SetActive(false);
         }
-        */
+        
 
 
     }

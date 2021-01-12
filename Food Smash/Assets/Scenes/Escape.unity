@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7.1696167, y: 70}
+  m_AnchoredPosition: {x: 25, y: 75}
   m_SizeDelta: {x: 1414.3392, y: 419.9026}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &772014511
@@ -264,7 +264,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u8981\u6E9C\u6E9C\u7403\u4E86\u5417"
+  m_Text: "\u8981\u6E9C\u6E9C\u7403\u4E86\u5417\n(Tab\u5173\u95ED)"
 --- !u!222 &772014512
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -437,8 +437,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0019531, y: -0.000015259}
-  m_SizeDelta: {x: 873.9961, y: 447}
+  m_AnchoredPosition: {x: 0, y: -0.000015259}
+  m_SizeDelta: {x: 1029, y: 620}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871012660
 MonoBehaviour:
